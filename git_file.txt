@@ -12,3 +12,21 @@ git push -u origin main
 git remote add origin https://github.com/Joshipawan713/quizpython.git
 git branch -M main
 git push -u origin main
+
+
+# read important
+
+# Check status
+git status
+
+# Add all files
+git add .
+
+# Commit changes
+git commit -m "Your commit message"
+
+# Rename branch to main if it's master
+git branch -M main
+
+# Push to remote
+git push -u origin main
