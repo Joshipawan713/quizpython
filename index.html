@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Quiz - Single Select</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="questions-side">
+            <div class="quiz-header">
+                <h1><i class="fas fa-graduation-cap"></i> Knowledge Challenge</h1>
+                <p>Test your skills with our interactive quiz</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span class="progress-text">10% Complete</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-header">
+                    <span class="question-number">Question 1 of 10</span>
+                    <span class="question-type">Single Choice</span>
+                </div>
+                <h2 class="question-text">Which programming language is primarily used for web development?</h2>
+                <div class="choices-container">
+                    <div class="choice-item">
+                        <input type="radio" id="choice1-1" name="question1" value="1">
+                        <label for="choice1-1">
+                            <span class="choice-letter">A</span>
+                            <span class="choice-text">Python</span>
+                        </label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="choice1-2" name="question1" value="2">
+                        <label for="choice1-2">
+                            <span class="choice-letter">B</span>
+                            <span class="choice-text">JavaScript</span>
+                        </label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="choice1-3" name="question1" value="3">
+                        <label for="choice1-3">
+                            <span class="choice-letter">C</span>
+                            <span class="choice-text">C++</span>
+                        </label>
+                    </div>
+                    <div class="choice-item">
+                        <input type="radio" id="choice1-4" name="question1" value="4">
+                        <label for="choice1-4">
+                            <span class="choice-letter">D</span>
+                            <span class="choice-text">Java</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="navigation-buttons">
+                    <button type="button" class="btn-prev" disabled><i class="fas fa-arrow-left"></i> Previous</button>
+                    <button type="button" class="btn-next">Next Question</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-side">
+            <div class="nav-header">Question Navigation</div>
+            <div class="question-grid">
+                <div class="question-box active">1</div>
+                <div class="question-box">2</div>
+                <div class="question-box">3</div>
+                <div class="question-box">4</div>
+                <div class="question-box">5</div>
+                <div class="question-box">6</div>
+                <div class="question-box">7</div>
+                <div class="question-box">8</div>
+                <div class="question-box">9</div>
+                <div class="question-box">10</div>
+                <div class="question-box">11</div>
+                <div class="question-box">12</div>
+            </div>
+
+            <div class="timer-container">
+                <div class="timer-text">Time Remaining</div>
+                <!-- <div class="timer" id="timer">14:55</div> -->
+                <div class="timer" id="timer">1:55</div>
+            </div>
+
+            <div class="quiz-info">
+                <div class="info-item">
+                    <span>Questions Answered:</span>
+                    <span>1/10</span>
+                </div>
+                <div class="info-item">
+                    <span>Correct Answers:</span>
+                    <span>0</span>
+                </div>
+                <div class="info-item">
+                    <span>Score:</span>
+                    <span>0%</span>
+                </div>
+            </div>
+
+            <button type="button" class="btn-submit" style="margin-top: 20px; width: 100%;">
+                Submit Quiz <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
